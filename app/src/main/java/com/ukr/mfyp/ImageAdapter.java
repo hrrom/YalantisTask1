@@ -61,7 +61,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
             img_android.setOnClickListener(this);
 
         }
-        /** Process pressing on item of RecycleView and shows Toast message   */
+        /** Process pressing on item of RecycleView and shows Toast message  */
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
