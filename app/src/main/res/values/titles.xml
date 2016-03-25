@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles_array">
+        <item>Prototype</item>
+        <item>First production</item>
+        <item>Last production</item>
+        <item>Manufacturer</item>
+    </string-array>
+</resources>

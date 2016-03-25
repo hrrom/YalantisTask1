@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CE-1257219</string>
+    <string name="title">Municipal services</string>
+    <string name="status">In Process</string>
+    <string name="started_title">Started</string>
+    <string name="started_date">March 20 2016</string>
+    <string name="registered_title">Registered</string>
+    <string name="registered_date">March 20 2016</string>
+    <string name="deadline_title">Deadline</string>
+    <string name="deadline_date">March 25 2016</string>
+    <string name="executor_title">Executor</string>
+    <string name="executor_name">Dniproperovsk MVK</string>
+    <string name="info">Wherever you go potholes, poor road surface you can find everywhere!</string>
+</resources>

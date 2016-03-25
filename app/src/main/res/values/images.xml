@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="images_array">
+        <item>http://www.depo.ua/static/files/gallery_uploads/images/%D1%8F%D0%BC%D0%B0.jpg</item>
+        <item>http://www.depo.ua/static/img/_/_/____3598_729x547.jpg</item>
+        <item>http://tourdream.net/wp-content/uploads/2012/08/2012-08-30_02_Ukraine-Kiev-Bad-Road-Condition.jpg</item>
+        <item>http://dniprograd.org/system/App/Post/images/000/044/372/very_large/%D0%B0%D0%B2%D1%82%D0%BE.jpg</item>
+    </string-array>
+</resources>

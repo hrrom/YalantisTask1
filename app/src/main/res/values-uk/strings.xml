@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CE-1257219</string>
+    <string name="title">Комунальне господарство</string>
+    <string name="status">В роботі</string>
+    <string name="started_title">Створено</string>
+    <string name="started_date">20 березня 2016</string>
+    <string name="registered_title">Зареєстровано</string>
+    <string name="registered_date">20 березня 2016</string>
+    <string name="deadline_title">Вирішити до</string>
+    <string name="deadline_date">25 березня 2016</string>
+    <string name="executor_title">Відповідальний</string>
+    <string name="executor_name">Дніпропетровський МВК</string>
+    <string name="info">Куда бы вы ни ехали выбоины, плохое дорожное покрытие вас встретят повcюду!</string>
+</resources>

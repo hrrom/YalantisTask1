@@ -1,0 +1,133 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/padding_16"
+        android:paddingRight="@dimen/padding_16"
+        android:paddingTop="@dimen/padding_8"
+        tools:context="com.ukr.mfyp.MainActivity"
+        android:orientation="vertical"
+        android:focusableInTouchMode="false">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RowStyle">
+
+            <TextView
+                style="@style/TitleStyleBlack"
+                android:text="@string/title"
+                android:id="@+id/titleTextView"
+                android:textSize="@dimen/font_18"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                style="@style/TitleStyleGrey"
+                android:text="@string/status"
+                android:id="@+id/statusTextView"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_shape"
+                android:paddingLeft="@dimen/padding_16"
+                android:paddingTop="@dimen/padding_8"
+                android:paddingRight="@dimen/padding_16"
+                android:paddingBottom="@dimen/padding_8" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RowStyle">
+
+            <TextView
+                style="@style/TitleStyleGrey"
+                android:text="@string/started_title"
+                android:id="@+id/startTextView"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                style="@style/TitleStyleBlack"
+                android:text="@string/started_date"
+                android:id="@+id/startDateTextView"
+                android:layout_alignParentRight="true"
+                android:password="false" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RowStyle">
+
+            <TextView
+                style="@style/TitleStyleGrey"
+                android:text="@string/registered_title"
+                android:id="@+id/regTextView"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                style="@style/TitleStyleBlack"
+                android:text="@string/registered_date"
+                android:id="@+id/regDateTextView"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RowStyle">
+
+            <TextView
+                style="@style/TitleStyleGrey"
+                android:text="@string/deadline_title"
+                android:id="@+id/endTextView"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                style="@style/TitleStyleBlack"
+                android:text="@string/deadline_date"
+                android:id="@+id/endDateTextView"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+        <include layout="@layout/divider" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RowStyle">
+
+            <TextView
+                style="@style/TitleStyleGrey"
+                android:text="@string/executor_title"
+                android:id="@+id/executorTextView"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                style="@style/TitleStyleBlack"
+                android:text="@string/executor_name"
+                android:id="@+id/executorNameTextView"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            style="@style/TitleStyleBlack"
+            android:text="@string/info"
+            android:id="@+id/infoTextView"
+            android:paddingTop="@dimen/padding_16"
+            android:gravity="fill" />
+
+        <android.support.v7.widget.RecyclerView
+            style="@style/RowStyle"
+            android:id="@+id/recycler_view"
+            android:scrollbars="horizontal"    />
+
+    </LinearLayout>
+</ScrollView>
