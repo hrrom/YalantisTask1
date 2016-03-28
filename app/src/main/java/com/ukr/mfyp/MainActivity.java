@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-
+//[Comment] Wrong colors and image sizes. Image sizes should be the same
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     /** initialization for Back Arrow, RecycleView */
     private void initViews(){
         // display Back Arrow in ActionBar
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar(); //[Comment] Please optimize import
+        actionBar.setDisplayHomeAsUpEnabled(true); //[Comment] Action bar can be null
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);

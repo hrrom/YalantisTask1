@@ -14,8 +14,8 @@ import android.widget.Toast;
 import com.squareup.picasso.Picasso;
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> {
-    private String[] images;
-    private Context context;
+    private String[] images; //[Comment] Use google code style. Wrong name
+    private Context context; //[Comment] Use google code style. Wrong name
 
     public ImageAdapter(Context context, String[] images) {
         this.context = context;
@@ -27,9 +27,9 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         View view = LayoutInflater.from(context).inflate(R.layout.item, viewGroup, false);
 
         // Changing by half width of items of RecycleView
-        DisplayMetrics displaymetrics = new DisplayMetrics();
-        int width = (Resources.getSystem().getDisplayMetrics().widthPixels) / 2 - 24;
-        LinearLayout.LayoutParams imgParams = new LinearLayout.LayoutParams(width, LinearLayout.LayoutParams.WRAP_CONTENT);
+        DisplayMetrics displaymetrics = new DisplayMetrics(); //[Comment] Unused
+        int width = (Resources.getSystem().getDisplayMetrics().widthPixels) / 2 - 24; //[Comment] Magic numbers
+        LinearLayout.LayoutParams imgParams = new LinearLayout.LayoutParams(width, LinearLayout.LayoutParams.WRAP_CONTENT); //[Comment] Use Item Decoration instead layout params
         view.setLayoutParams(imgParams);
         return new ViewHolder(view);
     }
@@ -53,7 +53,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        public ImageView img_android;
+        public ImageView img_android; //[Comment] Wrong name, wrong visibility modifier
 
         public ViewHolder(View v) {
             super(v);
