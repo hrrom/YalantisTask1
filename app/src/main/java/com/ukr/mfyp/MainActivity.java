@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.addItemDecoration(new PaddingItemDecoration(sizeInPixel));
     }
 
-    /** Computing  width of RecyclerView item for displaying two items at the same time     */
+    /** Computing  width of RecyclerView item for displaying two items at the same time  */
     public int computeImageSize() {
         int screenWidth = getResources().getDisplayMetrics().widthPixels;
         int layoutPadding = (int) getResources().getDimension(R.dimen.padding_16);

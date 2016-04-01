@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> {
     private String[] mImages;
     private Context mContext;
-    private int mImageSize;         // Size of image side for resize
+    private int mImageSize;          // Size of image side for resize
 
     public ImageAdapter(Context context, String[] images, int imageSize) {
         mContext = context;
