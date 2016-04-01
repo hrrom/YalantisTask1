@@ -29,21 +29,33 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    /** initialization for Back Arrow, RecycleView */
+    /** Initialization for Back Arrow, RecycleView */
     private void initViews(){
         // display Back Arrow in ActionBar
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
 
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
-        recyclerView.setHasFixedSize(true);
+        RecyclerView mRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
+        mRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(layoutManager);
+        mRecyclerView.setLayoutManager(layoutManager);
 
         Resources res = getResources();
         String[] images = res.getStringArray(R.array.images_array);
-        ImageAdapter adapter = new ImageAdapter(getApplicationContext(),images);
-        recyclerView.setAdapter(adapter);
+        ImageAdapter adapter = new ImageAdapter(getApplicationContext(),images, computeImageSize());
+        mRecyclerView.setAdapter(adapter);
+
+        int sizeInPixel = getResources().getDimensionPixelSize(R.dimen.padding_4);
+        mRecyclerView.addItemDecoration(new PaddingItemDecoration(sizeInPixel));
+    }
+
+    /** Computing  width of RecyclerView item for displaying two items at the same time     */
+    public int computeImageSize() {
+        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+        int layoutPadding = (int) getResources().getDimension(R.dimen.padding_16);
+        int imagePadding = (int) getResources().getDimension(R.dimen.padding_4);
+        return (screenWidth - layoutPadding*2 - imagePadding*2)/2;
     }
 
     /** Process pressing on View and shows Toast message         */
